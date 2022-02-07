@@ -25,4 +25,4 @@ jobs:
           # upload index html 
           aws s3 cp index.html s3://$BUCKET_NAME/index.html --acl public-read
           # enable website hosting
-          aws s3 webiste s3://$BUCKET_NAME --index-document index.html
+          aws s3 website s3://$BUCKET_NAME --index-document index.html
